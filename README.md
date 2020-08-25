@@ -1,15 +1,8 @@
-# Unofficial webapp wrapper for Office 365 webapps
+# Unofficial webapp wrapper for Microsoft To Do
 
-A set of webapp wrappers, based on QtWebEngine, for the following websites:
+A Microsoft To Do webapp wrappers, based on QtWebEngine, for the following website:
 
-- [Outlook](https://outlook.live.com/mail/0/inbox)
-- [Word](https://www.office.com/launch/word)
-- [Excel](https://www.office.com/launch/excel)
-- [PowerPoint](https://www.office.com/launch/powerpoint)
-- [OneDrive](https://onedrive.live.com/)
-- [OneNote](https://www.onenote.com/notebooks)
-
-These are links to the Office 365 webapps embedded in a minimalist web browser.
+- [To Do](https://to-do.live.com/tasks/")
 
 This snap is not supported by or endorsed by Microsoft, Inc.
 

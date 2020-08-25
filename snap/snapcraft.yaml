@@ -1,7 +1,7 @@
-name: unofficial-webapp-office
-version: '0.4'
-summary: Unofficial Office
-description: Unofficial wrapper for Office 365 web apps.
+name: unofficial-webapp-todo
+version: "0.4"
+summary: Unofficial To Do
+description: Unofficial wrapper for Microsoft To Do web app.
 
 confinement: strict
 base: core18
@@ -17,7 +17,7 @@ parts:
     plugin: make
     make-parameters: ["FLAVOR=qt5"]
 
-  unofficial-webapp-office-qml:
+  unofficial-webapp-todo-qml:
     after: [desktop-qt5]
     source: .
     plugin: dump
@@ -29,12 +29,12 @@ parts:
       - qml-module-qtquick-dialogs
       - qml-module-qtquick-controls
     organize:
-      unofficial-webapp-office.launcher: bin/unofficial-webapp-office.launcher
+      unofficial-webapp-todo.launcher: bin/unofficial-webapp-todo.launcher
 
 apps:
   word:
-    command: unofficial-webapp-office.launcher "https://www.office.com/launch/word" "Word"
-    desktop: snap/gui/word.desktop
+    command: unofficial-webapp-todo.launcher "https://to-do.live.com/tasks/" "To Do"
+    desktop: snap/gui/todo.desktop
     plugs: &plugs
       - browser-support
       - desktop
@@ -46,28 +46,3 @@ apps:
       - x11
     environment: &environment
       DISABLE_WAYLAND: 1
-  outlook:
-    command: unofficial-webapp-office.launcher "https://outlook.live.com/mail/0/inbox" "Outlook"
-    desktop: snap/gui/outlook.desktop
-    plugs: *plugs
-    environment: *environment
-  excel:
-    command: unofficial-webapp-office.launcher "https://www.office.com/launch/excel" "Excel"
-    desktop: snap/gui/excel.desktop
-    plugs: *plugs
-    environment: *environment
-  powerpoint:
-    command: unofficial-webapp-office.launcher "https://www.office.com/launch/powerpoint" "PowerPoint"
-    desktop: snap/gui/powerpoint.desktop
-    plugs: *plugs
-    environment: *environment
-  onenote:
-    command: unofficial-webapp-office.launcher "https://www.onenote.com/notebooks" "OneNote"
-    desktop: snap/gui/onenote.desktop
-    plugs: *plugs
-    environment: *environment
-  onedrive:
-    command: unofficial-webapp-office.launcher "https://onedrive.live.com/" "OneDrive"
-    desktop: snap/gui/onedrive.desktop
-    plugs: *plugs
-    environment: *environment

@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=0.1
+Name=To Do
+GenericName=To Do
+Comment=Microsoft To Do
+Type=Application
+Icon=${SNAP}/snap/gui/todo.png
+Exec=unofficial-webapp-todo.todo
+Terminal=false
+Keywords=Todo,productivity,list,to-do
+Categories=Office;Productivity;Qt
