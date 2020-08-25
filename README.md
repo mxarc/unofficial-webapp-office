@@ -1,8 +1,8 @@
 # Unofficial webapp wrapper for Microsoft To Do
 
-A Microsoft To Do webapp wrappers, based on QtWebEngine, for the following website:
-
 Forked from https://github.com/sirredbeard/unofficial-webapp-office
+
+A Microsoft To Do webapp wrapper, based on QtWebEngine, for the following website:
 
 - [To Do](https://to-do.live.com/tasks/")
 
@@ -24,4 +24,4 @@ Check "Keep me signed in" to avoid having to sign in.
 
 ## Screenshot
 
-![Screenshot](https://res.cloudinary.com/canonical/image/fetch/f_auto,q_auto,fl_sanitize,w_819,h_614/https://dashboard.snapcraft.io/site_media/appmedia/2019/12/Screenshot_from_2019-12-14_01-27-09.png)
+![Screenshot](https://user-images.githubusercontent.com/4296205/91124917-a272c900-e65d-11ea-817d-2314eee26df7.png)
