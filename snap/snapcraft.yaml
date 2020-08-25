@@ -32,7 +32,7 @@ parts:
       unofficial-webapp-todo.launcher: bin/unofficial-webapp-todo.launcher
 
 apps:
-  word:
+  todo:
     command: unofficial-webapp-todo.launcher "https://to-do.live.com/tasks/" "To Do"
     desktop: snap/gui/todo.desktop
     plugs: &plugs
